@@ -1,5 +1,5 @@
 {
-    "name": "2601/matryoshka",
+    "name": "_2601/matryoshka",
     "description": "Russian Doll Caching for Laravel.",
     "license": "MIT",
     "keywords": ["laravel", "cache"],
