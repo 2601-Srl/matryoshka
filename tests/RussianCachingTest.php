@@ -1,6 +1,6 @@
 <?php
 
-use Laracasts\Matryoshka\RussianCaching;
+use _2601\Matryoshka\RussianCaching;
 
 class RussianCachingTest extends TestCase
 {
@@ -20,6 +20,4 @@ class RussianCachingTest extends TestCase
         $this->assertTrue($cache->has($post->getCacheKey()));
         $this->assertTrue($cache->has($post));
     }
-    
 }
-
