@@ -36,11 +36,11 @@ class BladeDirective
      * @param mixed       $model
      * @param string|null $key
      */
-    public function setUp($model, $key = null, $identifier = null)
+    public function setUp($model, $identifier = null, $key = null)
     {
         ob_start();
 
-        $this->keys[] = $key = $this->normalizeKey($model, $key, $identifier);
+        $this->keys[] = $key = $this->normalizeKey($model, $identifier, $key);
 
         return $this->cache->has($key);
     }
@@ -62,7 +62,7 @@ class BladeDirective
      * @param mixed       $item
      * @param string|null $key
      */
-    protected function normalizeKey($item, $key = null, $identifier = null)
+    protected function normalizeKey($item, $identifier = null, $key = null)
     {
         // If the user wants to provide their own cache
         // key, we'll opt for that.
