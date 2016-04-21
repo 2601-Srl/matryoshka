@@ -5,6 +5,10 @@
     "keywords": ["laravel", "cache"],
     "authors": [
         {
+            "name": "Jeffrey Way",
+            "email": "jeffrey@laracasts.com"
+        },
+        {
             "name": "Gabriele Sbaiz",
             "email": "webservices@2601.it"
         }
