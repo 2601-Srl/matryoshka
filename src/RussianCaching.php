@@ -35,7 +35,7 @@ class RussianCaching
 
         return $this->cache
             ->tags('views')
-            ->rememberForever($key, function () use ($fragment) {
+            ->rememberForever($key, function() use ($fragment) {
                 return $fragment;
             });
     }

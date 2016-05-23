@@ -19,11 +19,11 @@ class MatryoshkaServiceProvider extends ServiceProvider
             $kernel->pushMiddleware('_2601\Matryoshka\FlushViews');
         }
 
-        Blade::directive('cache', function ($expression) {
+        Blade::directive('cache', function($expression) {
             return "<?php if (! app('_2601\Matryoshka\BladeDirective')->setUp{$expression}) : ?>";
         });
 
-        Blade::directive('endcache', function () {
+        Blade::directive('endcache', function() {
             return "<?php endif; echo app('_2601\Matryoshka\BladeDirective')->tearDown() ?>";
         });
     }
